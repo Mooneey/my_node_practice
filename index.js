@@ -3,7 +3,11 @@ const app = express()
 const port = 9999
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Welcome!')
+})
+
+app.get('/api', (req, res)=> {
+  res.send('This is API page')
 })
 
 app.listen(port, () => {
